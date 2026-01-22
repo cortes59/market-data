@@ -1,0 +1,31 @@
+{
+  "name": "market-data-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-Time Market Data Platform - Monorepo",
+  "workspaces": [
+    "shared",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../shared && npm install",
+    "dev:backend": "cd backend && npm run start:dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:all": "npm run build:shared && npm run build:backend && npm run build:frontend",
+    "build:shared": "cd shared && npm run typecheck",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "docker:up": "docker-compose up --build",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": [
+    "market-data",
+    "real-time",
+    "nestjs",
+    "react",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "MIT"
+}

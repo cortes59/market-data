@@ -1,0 +1,45 @@
+# Node modules
+**/node_modules
+**/npm-debug.log
+**/yarn-error.log
+**/package-lock.json
+**/yarn.lock
+
+# Build artifacts
+**/dist
+**/build
+**/.next
+**/out
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Git
+**/.git
+**/.gitignore
+
+# IDE
+**/.vscode
+**/.idea
+**/.DS_Store
+
+# Testing
+**/coverage
+**/.nyc_output
+
+# Logs
+**/logs
+**/*.log
+
+# Docker
+**/Dockerfile
+**/docker-compose.yml
+**/.dockerignore
+
+# Misc
+**/README.md
+**/.editorconfig
+**/.prettierrc
+**/.eslintrc

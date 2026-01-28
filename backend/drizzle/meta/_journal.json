@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1769031000890,
+      "tag": "0000_loving_boomer",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1769031997726,
+      "tag": "0001_sharp_leopardon",
+      "breakpoints": true
+    }
+  ]
+}

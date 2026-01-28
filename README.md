@@ -72,6 +72,9 @@ cd backend
 npm run start:dev
 ```
 
+On startup, the backend will automatically apply Drizzle SQL migrations from `backend/drizzle/`
+to create required tables (e.g. `market_data`). You can disable this with `DB_RUN_MIGRATIONS=false`.
+
 Backend will run on `http://localhost:3000`
 
 ### 5. Run Frontend

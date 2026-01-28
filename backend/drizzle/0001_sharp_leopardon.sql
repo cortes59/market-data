@@ -1,0 +1,2 @@
+ALTER TABLE "market_data" ALTER COLUMN "volume" SET DATA TYPE numeric(24, 2);--> statement-breakpoint
+CREATE INDEX IF NOT EXISTS "market_data_symbol_timestamp_idx" ON "market_data" ("symbol","timestamp");

@@ -34,6 +34,9 @@ COPY --from=builder /app/shared ../shared
 # Copy built backend
 COPY --from=builder /app/backend/dist ./dist
 
+# Copy Drizzle migration files so the app can auto-migrate on startup
+COPY --from=builder /app/backend/drizzle ./drizzle
+
 # Set environment to production
 ENV NODE_ENV=production
 
